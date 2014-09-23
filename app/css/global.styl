@@ -1,0 +1,422 @@
+/* ********************************** */
+/* Global */
+/* ********************************** */
+
+*
+  padding 0
+  margin 0
+
+html
+  height 100%
+
+body
+  width 100%
+  height 100%
+  background-color #000
+  font-family Helvetica Neue, Helvetica, Verdana, sans-serif
+
+div
+  position relative
+  box-sizing border-box
+  height auto
+
+/* ********************************** */
+/* BG/Global Stuff */
+/* ********************************** */
+
+#overlay
+  background-color #000000
+  width 100%
+  position fixed
+  top 0
+  left 0
+  z-index 1000
+
+#keyBG
+  background-image url(../img/bg_ta.jpg)
+  background-position top left
+  background-size cover
+  background-repeat no-repeat
+  width 100%
+  height 100%
+
+#ta2
+  position fixed
+  width 250px
+  bottom 25px
+  right 25px
+
+#footer
+  position absolute
+  bottom 0
+  left 0
+  padding 10px
+  width 100%
+
+#rotatePrompt
+  display none
+  width 100%
+  top 40%
+
+#rotatePrompt p
+  font-size 15px
+
+/* ********************************** */
+/* Easter Egg */
+/* ********************************** */
+
+#bigEars
+  position fixed
+  bottom 0
+  left 0
+  z-index 300
+  width 180px
+  height 161px
+  background url(../img/bonusIcon.png)
+  background-repeat no-repeat
+  background-position top right
+
+#bonus
+  display none
+  position absolute
+  top 0
+  left 0
+  width 100%
+  z-index 20000
+  color #fff
+
+#bonus p.quote
+  margin-top 40px
+  font-size 22px
+  font-weight lighter
+  letter-spacing 1px
+
+#bonus p.quote span.attribution
+  font-size 15px
+  text-transform uppercase
+  font-weight lighter
+  letter-spacing 3px
+
+#bonusImage
+  width 80%
+  padding-top 20px
+
+/* ********************************** */
+/* Content Boxes */
+/* ********************************** */
+
+.scrollY
+  overflow-y auto
+
+.content
+  z-index 500
+  color #ffffff
+  margin-top 70px
+  max-width 1200px
+  margin-bottom 80px
+
+  /*
+  background-image url(../img/bg_book_2.png)
+  background-position top left
+  background-size contain
+  background-repeat no-repeat
+  */
+
+.content h1
+  font-weight lighter
+  font-size 26px
+  line-height 1.2em
+  margin 15px 5px 10px 5px
+
+.content p
+  line-height 1.5em
+  font-size 14px
+  margin 5px 5px 10px 5px
+
+.content p.quote
+  margin-top 40px
+  font-size 19px
+  font-weight lighter
+  letter-spacing 1px
+
+.content p.quote span.attribution
+  font-size 14px
+  text-transform uppercase
+  font-weight lighter
+  letter-spacing 3px
+
+.textMargin
+  margin 5px
+
+.contentCloseIcon
+  // padding 10px
+
+.downloadItem
+  padding 5px
+  border 1px solid #CCC
+  text-transform uppercase
+  color #CCC
+  background-image url(../img/iconDownload.png)
+  background-repeat no-repeat
+  background-position center right
+
+.downloadItem a
+  text-decoration none
+  color inherit
+
+.downloadItem:hover
+  color #eeefdc
+  background-image url(../img/iconDownload_ov.png)
+
+.downloadItem p
+  margin 10px
+  line-height 1em
+  font-size 13px
+
+/* ********************************** */
+/* Intro */
+/* ********************************** */
+
+#preloader
+  color #ffffff
+  top 50%
+  font-weight lighter
+  font-size 20px
+  z-index 20000
+
+#intro .quote
+  width 60%
+  height auto
+  text-align center
+  color #FFF
+  font-size 30px
+  font-weight lighter
+
+/* ********************************** */
+/* Gallery */
+/* ********************************** */
+
+.galleryImg
+  width 12.5%
+  padding 5px
+  float left
+
+#selectedImage
+  margin-top 15px
+
+/* ********************************** */
+/* Cast */
+/* ********************************** */
+
+.castHeader
+  margin 10px auto 10px auto
+  max-width 800px
+
+.castMember
+  margin 10px auto 10px auto
+  background-color #000
+  max-width 800px
+
+.castText
+  padding 50px
+
+/* ********************************** */
+/* Video */
+/* ********************************** */
+
+
+/* ********************************** */
+/* Main Menu */
+/* ********************************** */
+
+#menu
+  background-color #000
+  background-image url(../img/bg_menu.jpg)
+  background-size contain
+  background-position top right
+  background-repeat no-repeat
+
+#menuButton
+  position fixed
+  z-index 510
+
+.menuOption
+  width 100%
+  padding-top 15px
+  padding-bottom 15px
+  color #eeefdc
+  text-align center
+  font-size 16px
+  background-image url(../img/bg_menubutton.png)
+  background-repeat no-repeat
+  background-position bottom center
+  text-transform uppercase
+
+#menuToggleOn, #menuToggleOff
+  margin 0 auto
+  width 80px
+  padding 10px
+
+/* ********************************** */
+/* Misc Stuff */
+/* ********************************** */
+
+.touchIcon
+  position absolute
+  top 5px
+  right 5px
+  width 5%
+
+.closeIconR, .closeIconL
+  position absolute
+  top 2px
+  width 30px
+
+.closeIconL
+  position absolute
+  left 5px
+
+.closeIconR
+  position absolute
+  right 5px
+
+.hotspot
+  cursor pointer
+
+.mobile
+  display none
+
+/* ********************************** */
+/* Type */
+/* ********************************** */
+
+.centerText
+  text-align center
+
+.fineprint
+  font-size 10px
+
+/* ********************************** */
+/* Layout Stuff */
+/* ********************************** */
+
+.left
+  float left
+
+.right
+  float right
+
+.clear
+  clear both
+
+.center
+  text-align center
+
+.centerEl
+  margin-left auto
+  margin-right auto
+
+.pad50
+  padding 50px
+
+.noMargin
+  margin 0
+
+.topMargin
+  margin-top 15px
+
+/* ********************************** */
+/* Color Stuff */
+/* ********************************** */
+
+.greenish
+  color #b7b692
+
+.tan
+  color #d0ba91
+
+.offWhite
+  color #f4f2e1
+
+.tmColor1
+  color #eeefdc
+
+.tmColor2
+  color #1d1f29
+
+/* ********************************** */
+/* Responsive Stuff */
+/* ********************************** */
+
+.img
+  width 100%
+
+.img10
+  width 5%
+
+.img33
+  width 33%
+
+.img40
+  width 40%
+
+.img50
+  width 50%
+
+/* ********************************** */
+/* Mobile Stuff */
+/* ********************************** */
+
+@media(max-width: 600px)
+
+  /*
+  @media screen and (orientation: landscape)
+    .content, #menu, #menuButton, #bigEars, #bonus, #ta, #footer, #intro
+      display none
+
+    #rotatePrompt
+      display inherit
+
+  */
+
+  #ta2
+    position fixed
+    width 180px
+    bottom 25px
+    right 15px
+
+  #menuToggleOn, #menuToggleOff
+    margin 0 auto
+    width 50px
+    padding 5px
+
+  #footer
+    padding 3px
+
+  #footer p
+    line-height 1em
+
+  .headerImg
+    width 80%
+
+  .lgScreen
+    display none
+
+  .mobile
+    display inherit
+
+  .content
+    background-image none
+
+  .pad50
+    padding 10px
+
+  .lightPad
+    padding 3px
+
+  .castText
+    padding 0
+
+  .closeIconR, .closeIconL
+    top 0
+    width 20px

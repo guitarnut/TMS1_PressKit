@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+    <!-- SHIV for IE -->
+    <script>
+        document.createElement('video');
+        document.createElement('audio');
+        document.createElement('track');
+    </script>
+    <!-- Video -->
+    <link href="//vjs.zencdn.net/4.8/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.8/video.js"></script>
+    <!-- Vendor libs -->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="vendor/TweenLite.min.js"></script>
+    <script src="vendor/TimelineLite.min.js"></script>
+    <script src="vendor/plugins/CSSPlugin.min.js"></script>
+    <script src="vendor/easing/EasePack.min.js"></script>
+    <!-- CSS -->
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <title>The Missing</title>
+</head>
+<body>
+<div id="preloader"><p class="center"></p></div>
+<div id="contentWindow">
+
+<!-- Intro -->
+
+<div id="intro">
+    <div id="introFrame1">
+        <div class="quote">
+            <p>"I came back Emily. Same room and everything. TV still doesn't work. Anyway, I'm here. I thought you should know why..." </p>
+        </div>
+    </div>
+    <div id="introFrame2">
+        <img src="img/bg_intro2.jpg">
+
+        <div class="quote"><p>"...I've found something."<br><br><span class="quoteAttribution">TONY HUGHES</span>
+        </p>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+
+<div id="about" class="content pad50">
+
+    <div><img src="img/text_about.png" class="headerImg textMargin"><img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon"></div>
+    <img src="img/image_1.png" alt="Photo" class="right img40 lgScreen">
+
+    <p class="tmColor1">When five year-old Oliver Hughes disappears while on holiday in France, it sets off a manhunt that will last for years to come. "The Missing," a STARZ Limited Series, is a gripping dramatic thriller that takes you inside the mind of a father, Tony (played by James Nesbitt), desperate to locate his lost son. With help from a local police detective (played by Tcheky Karyo), Tony embarks on an obsessive quest to find his son and those responsible for his disappearance. A gripping puzzle with twists and turns at every stage, Tony's exhaustive search fractures his relationship with his wife, Emily (played by Frances O'Connor), and threatens to destroy his life. Told through a delicate and complex narrative, "The Missing" unfolds over two time frames simultaneously.</p>
+    <img src="img/image_1.png" alt="Photo" class="img mobile">
+
+    <p class="quote tan">"To give someone hope can be a dangerous thing."<br><span class="attribution tan">- Julien Baptiste</span>
+    </p><br class="clear">
+</div>
+
+<!-- Gallery -->
+
+<div id="gallery" class="content">
+    <img src="img/text_gallery.png" class="headerImg"><img src="img/iconClose.svg" class="close hotspot closeIconR">
+    <!-- Fullsize -->
+    <div id="selectedImage" class="lgScreen">
+        <img src="img/gallery1.jpg" class="img hotspot" alt="Photo">
+    </div>
+
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery1.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery2.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery3.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery4.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery5.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery6.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery7.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery8.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery9.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery10.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery11.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery12.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery13.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery14.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery15.jpg" class="img" alt="Photo"></div>
+    <div class="galleryImg hotspot lgScreen"><img src="img/gallery16.jpg" class="img" alt="Photo"></div>
+    <br class="clear">
+
+    <!-- Mobile -->
+    <div class="mobile">
+        <img src="img/gallery1.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery2.jpg" class="img" alt="Photo">
+        <img src="img/gallery3.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery4.jpg" class="img" alt="Photo">
+        <img src="img/gallery5.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery6.jpg" class="img" alt="Photo">
+        <img src="img/gallery7.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery8.jpg" class="img" alt="Photo">
+        <img src="img/gallery9.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery10.jpg" class="img" alt="Photo">
+        <img src="img/gallery11.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery12.jpg" class="img" alt="Photo">
+        <img src="img/gallery13.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery14.jpg" class="img" alt="Photo">
+        <img src="img/gallery15.jpg" class="img lightPad" alt="Photo">
+        <img src="img/gallery16.jpg" class="img" alt="Photo">
+    </div>
+</div>
+
+<!-- Cast -->
+
+<div id="cast" class="content">
+    <div class="castHeader">
+        <img src="img/text_cast.png" class="headerImg"><img src="img/iconClose.svg" class="close hotspot closeIconR">
+        <p class="tmColor1" style="margin: 5px 0 10px 0">It's the summer of 2006 and the Hughes family, Tony, Emily and five-year-old Oliver, are left stranded in the quaint and beautiful town of Chalons Du Bois when their car fails unexpectedly. But Tony (played by Irish actor James Nesbitt) and Emily (played by Australian actress Frances O'Connor) choose to embrace the moment and check into a family run hotel while they wait for repairs to be completed. The town is abuzz with World Cup frenzy and Tony takes Oliver – nicknamed "Olly" - to a local bar where enthusiastic spectators are engrossed in TV screens broadcasting the quarter final match between France and Brazil. Tony and Olly make their way through the exuberant crowd, and as a goal is scored cheers fill the air... and in that moment, Tony realizes his son is gone. Vanished, without a trace.</p>
+        <p class="tmColor1 lgScreen" style="margin: 5px 0 10px 0"><strong>Click</strong> on a character for more information.</p>
+    </div>
+
+    <!-- Mobile -->
+    <div class="castText mobile">
+        <img src="img/character_1.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">TONY HUGHES</h1>
+
+        <p class="tan">James Nesbitt</p>
+
+        <p class="tmColor1">A devoted family man, Tony Hughes is looking after his son, Oliver, when he suddenly goes missing while on holiday in France. Tony holds himself responsible for Oliver's disappearance and finds it impossible to move on with his life as he becomes completely consumed with locating his son.</p>
+
+    </div>
+
+    <div class="castText mobile">
+        <img src="img/character_2.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">EMILY HUGHES</h1>
+
+        <p class="tan">Frances O'Connor</p>
+
+        <p class="tmColor1">Emily Hughes is Tony's wife and a loving mother to their son, Oliver, whose disappearance leaves her devastated. While she has attempted to move on with her life in the wake of the tragedy, the re-opening of the investigation into Oliver's disappearance threatens to once again emotionally engulf her.</p>
+
+    </div>
+
+    <div class="castText mobile">
+        <img src="img/character_3.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">JULIEN BAPTISTE</h1>
+
+        <p class="tan">Tchéky Karyo</p>
+
+        <p class="tmColor1">Julien Baptiste is the lead French investigator in the case of Oliver Hughes' unsolved disappearance. He is the sane, comfortable anchor for Tony and Emily Hughes in the midst of the confusion of a foreign environment. Julien is revealed to be as obsessive as Tony, haunted by a troubled relationship from his past and unable to settle into an easy retirement.</p>
+
+    </div>
+
+    <div class="castText mobile">
+        <img src="img/character_4.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">MARK WALSH</h1>
+
+        <p class="tan">Jason Flemyng</p>
+
+        <p class="tmColor1">Mark Walsh falls in love with Emily and provides constant support to her during the re-investigation into Oliver's disappearance, even though it puts a strain on their impending marriage.</p>
+
+    </div>
+
+    <div class="castText mobile">
+        <img src="img/character_5.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">IAN GARRET</h1>
+
+        <p class="tan">Ken Stott</p>
+
+        <p class="tmColor1">Ian Garrett is a warm Englishman who is a wealthy and influential property developer in France. After Oliver disappears, Ian provides support to Tony and Emily and sets up a charity fund to help find their son. But as Ian ingratiates himself more and more into Tony's life, it becomes increasingly unclear what his true motives are.</p>
+
+    </div>
+
+    <div class="castText mobile"><img src="img/character_6.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">VINCENT BOURG</h1>
+
+        <p class="tan">Titus De Voogdt</p>
+
+        <p class="tmColor1">Vincent Bourg is a young man and a loner who is desperate to put the past behind him and to define himself as something other than what he feels himself to be.</p>
+
+    </div>
+
+    <div class="castText mobile"><img src="img/character_7.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">LAURENCE RELAUD</h1>
+
+        <p class="tan">&Eacute;milie Dequenne</p>
+
+        <p class="tmColor1">Laurence Relaud is a local gendarme who is conscientious and ambitious. Julien Baptiste trusts her by giving her more responsibility on the investigation, and when Tony Hughes resurfaces in France, Laurence does all she can to help him find out what really happened to his son.</p>
+
+    </div>
+
+    <div class="castText mobile"><img src="img/character_8.jpg" class="img" alt="Photo">
+
+        <h1 class="tmColor1">MALIK SURI</h1>
+
+        <p class="tan">Arsher Ali</p>
+
+        <p class="tmColor1">Malik Suri is an ambitious journalist who takes a keen interest in Oliver Hughes' disappearance. Malik is ruthlessly driven in his mission to obtain information on the case, and is convinced Tony Hughes is hiding a secret.</p>
+
+    </div>
+    <!-- Fullsize -->
+    <div class="castMember lgScreen hotspot"><img src="img/character_1.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">TONY HUGHES</h1>
+
+            <p class="tan">James Nesbitt</p>
+
+            <p class="tmColor1">A devoted family man, Tony Hughes is looking after his son, Oliver, when he suddenly goes missing while on holiday in France. Tony holds himself responsible for Oliver's disappearance and finds it impossible to move on with his life as he becomes completely consumed with locating his son.</p>
+
+        </div>
+    </div>
+    <div class="castMember lgScreen hotspot"><img src="img/character_2.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">EMILY HUGHES</h1>
+
+            <p class="tan">Frances O'Connor</p>
+
+            <p class="tmColor1">Emily Hughes is Tony's wife and a loving mother to their son, Oliver, whose disappearance leaves her devastated. While she has attempted to move on with her life in the wake of the tragedy, the re-opening of the investigation into Oliver's disappearance threatens to once again emotionally engulf her.</p>
+
+        </div>
+    </div>
+    <div class="castMember lgScreen hotspot"><img src="img/character_3.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">JULIEN BAPTISTE</h1>
+
+            <p class="tan">Tchéky Karyo</p>
+
+            <p class="tmColor1">Julien Baptiste is the lead French investigator in the case of Oliver Hughes' unsolved disappearance. He is the sane, comfortable anchor for Tony and Emily Hughes in the midst of the confusion of a foreign environment. Julien is revealed to be as obsessive as Tony, haunted by a troubled relationship from his past and unable to settle into an easy retirement.</p>
+
+        </div>
+    </div>
+    <div class="castMember lgScreen hotspot"><img src="img/character_4.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">MARK WALSH</h1>
+
+            <p class="tan">Jason Flemyng</p>
+
+            <p class="tmColor1">Mark Walsh falls in love with Emily and provides constant support to her during the re-investigation into Oliver's disappearance, even though it puts a strain on their impending marriage.</p>
+
+        </div>
+    </div>
+    <div class="castMember lgScreen hotspot"><img src="img/character_5.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">IAN GARRET</h1>
+
+            <p class="tan">Ken Stott</p>
+
+            <p class="tmColor1">Ian Garrett is a warm Englishman who is a wealthy and influential property developer in France. After Oliver disappears, Ian provides support to Tony and Emily and sets up a charity fund to help find their son. But as Ian ingratiates himself more and more into Tony's life, it becomes increasingly unclear what his true motives are.</p>
+
+        </div>
+    </div>
+
+    <div class="castMember lgScreen hotspot"><img src="img/character_6.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">VINCENT BOURG</h1>
+
+            <p class="tan">Titus De Voogdt</p>
+
+            <p class="tmColor1">Vincent Bourg is a young man and a loner who is desperate to put the past behind him and to define himself as something other than what he feels himself to be.</p>
+
+        </div>
+    </div>
+
+    <div class="castMember lgScreen hotspot"><img src="img/character_7.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">LAURENCE RELAUD</h1>
+
+            <p class="tan">&Eacute;milie Dequenne</p>
+
+            <p class="tmColor1">Laurence Relaud is a local gendarme who is conscientious and ambitious. Julien Baptiste trusts her by giving her more responsibility on the investigation, and when Tony Hughes resurfaces in France, Laurence does all she can to help him find out what really happened to his son.</p>
+
+        </div>
+    </div>
+
+    <div class="castMember lgScreen hotspot"><img src="img/character_8.jpg" class="img castImg" alt="Photo">
+
+        <div class="castText">
+            <h1 class="tmColor1">MALIK SURI</h1>
+
+            <p class="tan">Arsher Ali</p>
+
+            <p class="tmColor1">Malik Suri is an ambitious journalist who takes a keen interest in Oliver Hughes' disappearance. Malik is ruthlessly driven in his mission to obtain information on the case, and is convinced Tony Hughes is hiding a secret.</p>
+
+        </div>
+    </div>
+    <div class="downloadItem hotspot castHeader"><p><a href="downloads/CastBios.pdf" target="_blank">Cast Bios</a>
+    </p></div>
+</div>
+
+<!-- Episodes -->
+
+<div id="episode" class="content pad50">
+    <div><img src="img/text_episode.png" class="headerImg textMargin"><img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon"></div>
+
+    <p class="tmColor1">Please note that "The Missing" is an eight episode Limited Series. We respectfully request you refrain from including major plot reveals or spoilers in any coverage, including but not limited to material in the episode synopses.</p>
+
+    <h1 class="tmColor1">Episode 101 - "Eden"</h1>
+
+    <p class="tmColor1">Tony and Emily Hughes' life changes forever when their 5 year old son, Oliver, mysteriously disappears during a family holiday in France, triggering an obsessive, years-long manhunt led by local detective Julien Baptiste.</p>
+
+    <h1 class="tmColor1">Episode 102 - "Pray for Me"</h1>
+
+    <p class="tmColor1">In 2006, three days after Oliver's disappearance, suspicion falls on a local resident with a past while a generous benefactor comes to the aid of Tony and Emily. In the present day, Tony's attempt to re-open the investigation gathers momentum as he and Julien find the first bit of concrete evidence.</p>
+
+    <h1 class="tmColor1">Episode 103 - "The Meeting"</h1>
+
+    <p class="tmColor1">In 2006, the Oliver Hughes investigation continues. Tony remains suspicious of the police's decision to release a potential suspect. Secrets from Tony's past come back to haunt him. Ian Garrett continues to ingratiate his way towards earning Tony's trust. An undercover police officer in Paris provides Julien with a potential lead in the case. In the present day, Oliver's case has now officially been re-opened. Emily attempts to face the demons from her past.</p>
+
+    <h1 class="tmColor1">Episode 104 - "Gone Fishing"</h1>
+
+    <p class="tmColor1">In 2006, the case is thrown into disarray when a key witness is found murdered. Tony is troubled by his relationship with Ian Garrett. In the present day, Julien is intent on re-investigating the connections between a dead witness and Oliver's disappearance. The re-opened case begins to strain Emily and Mark's relationship.</p>
+
+    <h1 class="tmColor1">Episode 105 - "Molly"</h1>
+
+    <p class="tmColor1">In 2006, Tony and Emily continue to plead that the police investigate a suspected pedophile. Tony decides to take matters into his own hands, despite the consquences. In the present day, Tony and Julien retrace their steps in Paris to learn the whereabouts of someone who could have been connected to Oliver's disappearance.</p>
+
+
+</div>
+
+<!-- Production Notes -->
+
+<div id="production" class="content pad50">
+    <div><img src="img/text_production.png" class="headerImg textMargin"><img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon"></div>
+
+    <p class="tmColor1">A riveting and haunting character-driven drama, "The Missing" centers on a desperate eight-year search to find a young boy who suddenly disappears while on holiday in France with his loving parents. While the overarching premise is the actual search for a missing child, the story's compelling narrative examines the intense psychological and emotional toll that one tragic event can have on a family, a community and even law enforcement, whose professional entanglement takes a very personal turn as they seek answers and justice. The gripping, eight-episode STARZ Limited Series also deals with the raw emotions associated with such terrible loss and explores how obsession, excruciating guilt and the chance to redeem one's self can cause a person to lose everything and everyone that they've ever cared for. </p>
+
+    <p class="tmColor1">It's the summer of 2006 and the Hughes family, Tony, Emily and five-year-old Oliver, are left stranded in the quaint and beautiful town of Châlons Du Bois when their car fails unexpectedly. But Tony (played by Irish actor James Nesbitt) and Emily (played by Australian actress Frances O'Connor) choose to embrace the moment and check into a family-run hotel while they wait for repairs to be completed. The town is abuzz with World Cup frenzy and Tony takes Oliver – nicknamed "Olly" - to a local bar where enthusiastic spectators are engrossed in TV screens broadcasting the quarter final match between France and Brazil. Tony and Olly make their way through the exuberant crowd, and as a goal is scored cheers fill the air... and in that moment, Tony realizes his son is gone. Vanished, without a trace. </p>
+
+    <p class="tmColor1">The Hughes' lives are turned upside down. Emily is inconsolable; Tony is stricken by a sense of helplessness and yet they must grapple with Olly's disappearance while navigating a country and language that are foreign to them in every sense of the word. A media frenzy ensues, adding to the chaos, as new suspects in the disappearance emerge at every corner. </p>
+
+    <p class="tmColor1">Executive producer Willow Grylls says, "In the briefest of moments, an environment that felt happy for the Hughes family becomes nightmarish as they attempt to find their son in a country where they neither understand the language nor the rules." </p>
+
+    <p class="tmColor1">The psychological fallout and exhaustive manhunt unfolds over two different time frames, 2006 and 2014. Viewers are presented with clues from both the past and the present that could lead the family and police to uncover what has happened to young Olly. </p>
+
+    <p class="tmColor1">Grylls continues: "It is a story that takes place in a world that's familiar which quickly becomes unfamiliar. </p>
+
+    <p class="tmColor1">That dynamic drives tension through the whole piece. Director Tom Shankland says that he "wanted it to be fundamentally quite authentic and naturalistic so the audience would see the world through the eyes of the characters."</p>
+
+    <div class="downloadItem textMargin hotspot"><p>
+        <a href="downloads/ProductionBios.pdf" target="_blank">Production Bios</a></p></div>
+    <div class="downloadItem textMargin hotspot"><p>
+        <a href="downloads/ProductionNotes.pdf" target="_blank">Production Notes</a></p></div>
+
+</div>
+
+<!-- Video -->
+
+<div id="video" class="content pad50">
+    <div><img src="img/text_video.png" class="headerImg textMargin"><img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon"></div>
+    <video id="videoPlayer1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"></video>
+    <p class="videoLink" data-src="http://download.starz.com/csid/sr_pk_opening_1410478790" data-poster="img/gallery1.jpg">Video 1</p>
+
+    <p class="videoLink" data-src="http://download.starz.com/csid/sr_pk_opening_1410478790" data-poster="img/gallery1.jpg">Video 2</p>
+
+</div>
+<div id="starz" class="content pad50">
+    <div><img src="img/text_aboutstarz.png" class="headerImg textMargin"><img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon"></div>
+
+    <p class="tmColor1">Starz (NASDAQ: STRZA, STRZB) is a leading integrated global media and entertainment company with operating units that provide premium subscription video programming on domestic U.S. pay television channels (Starz Networks), global content distribution (Starz Distribution) and animated television and movie production (Starz Animation), www.starz.com.</p>
+
+    <p class="tmColor1"> Starz Networks is a leading provider of premium subscription video programming through the flagship STARZ&reg; and ENCORE&reg; pay TV networks which showcase premium original programming and movies to U.S. multichannel video distributors, including cable operators, satellite television providers, a nd t elecommunications c ompanies. As of June 30, 2014, STARZ and ENCORE serve a combined 55.9 million subscribers, including 22.0 million at STARZ, and 33.9 million at ENCORE, making them the largest pair of premium flagship channels in the U.S. STARZ&reg; and ENCORE&reg;, along with Starz Networks' third network MOVIEPLEX&reg;, air more than 1,000 movies monthly across 17 linear networks, complemented by On Demand and authenticated online offerings through STARZ PLAY, ENCORE PLAY, and MOVIEPLEX PLAY. Starz Distribution develops, produces and acquires entertainment content, distributing it to consumers globally on DVD, digital formats and traditional television. Starz Distribution's home video, digital media and worldwide distribution business units distribute original programming content produced by Starz, as well as entertainment content for itself and third parties. Starz Animation produces animated TV and movie content for studios, networks, distributors and audiences worldwide.</p>
+
+    <h1 class="tmColor1">About New Pictures</h1>
+
+    <p class="tmColor1">Established in April 2013 by Charlie Pattinson New Pictures already has two greenlit shows: The Missing for BBC One and Indian Summers - a ten hour period series set in India for Channel 4. The senior management team includes Elaine Pyke and Willow Grylls and Tommy Bulfin is script editor for the company.</p>
+
+    <p class="tmColor1">Charlie Pattinson launched Company Pictures in 1998 with George Faber and grew it into one of the UK's largest and most awarded Independent Production Companies.</p>
+
+    <p class="tmColor1">New Pictures has a first look distribution deal with All3Media International.</p>
+
+    <h1 class="tmColor1">About Playground</h1>
+
+    <p class="tmColor1">Playground, a New York based film, television and theater company, was founded by Emmy and Tony&reg; award winning producer Colin Callender in 2012. Playground is committed to producing quality drama for the stage and screen bringing together the finest US and UK talent from the worlds of theatre, film and television.</p>
+
+    <p class="tmColor1">Since its inception Playground has produced 35 hours of primetime television in the UK and US including The White Queen (Starz/BBC), Dracula (NBC/Sky), and Dancing on the Edge (BBC/Starz) garnering 6 Golden Globe&reg; and 5 Emmy nominations. Playground is currently in production with the six hour miniseries Wolf Hall (BBC / Masterpiece Theater) based on Hilary Mantel's bestseller starring Mark Rylance and Damian Lewis.</p>
+
+    <p class="tmColor1">On stage, Playground recently produced the Tony-nominated Casa Valentina from four-time Tony&reg; Award winner Harvey Fierstein and the Tony&reg; Award winning musical revival of Hedwig and the Angry Inch starring Neil Patrick Harris, as well as the critically acclaimed production of Macbeth at The Park Avenue Armory featuring Kenneth Branagh's NY stage debut.</p>
+
+    <p class="tmColor1">In addition, Playground is in development on a rich slate of film, television and theater projects that draw on the company's deep relations in the NY, London and LA creative communities, including Ken Lonergan's television adaptation E.M. Forster's Howards End and Chris Hampton's series adaptation of Dangerous Liaisons both for the BBC. Recently, Playground announced an agreement with author J.K. Rowling, alongside London stage producer Sonia Friedman, to produce an original stage play based on Harry Potter.</p>
+
+    <h1 class="tmColor1">About Company Pictures</h1>
+
+    <p class="tmColor1">Company Pictures is one of the UK's largest independent film and television drama production companies. Established in 1998 by Charlie Pattinson and George Faber, television production highlights include Elizabeth I (winner of three Golden Globes), all nine series' of Shameless (Channel 4: BAFTA and RTS awards), seven series' of Wild at Heart, six series' of Skins (E4/ Channel 4), seven George Gently films (BBC 1), Generation Kill written by the creators of The Wire (HBO), The Devils Whore (Channel 4: 3 RTS and 2 Broadcasting Press Guild Awards), an adaptation of Martina Cole's best-selling novel The Take starring Tom Hardy and Brian Cox (Sky 1: Best Multi-channel Programme, Broadcast Awards 2009), The Silence (BBC1: AMI Award for Best Television Drama, 2 IFTA Awards and a Crime Thriller Award), The Shadow Line starring Chiwetel Ejiofor, Christopher Ecclestone and Rafe Spall (BBC1); The Village starring John Simm and Maxine Peake (BBC1); Philippa Gregory's The White Queen (BBC1) and the upcoming Wolf Hall starring Mark Rylance, directed by Peter Kosminski (BBC2).</p>
+
+    <p class="tmColor1">In spring 2013 George Faber and Charlie Pattinson left Company and were replaced by John Yorke as managing director.</p>
+
+    <p class="tmColor1">In the past Company Pictures has produced The Lakes by Jimmy McGovern, A Young Person's Guide to Being a Rockstar (RTS award Best Serial) for Channel 4 and Warner Bros, North Square (Channel 4: winner Best Series Press Guild), Not Only But Always... (Channel 4: BAFTA winner: Rhys Ifans Best Actor), The Rotters' Club (BBC), and Life and Death of Peter Sellers (HBO: winner of two Golden Globe Awards for Best TV Movie and Best Actor for Geoffrey Rush and 15 Emmies). Company has also made five feature films with some of the UK's leading directing talent including films by Roger Michell, Stephen Hopkins, Penny Woolcock, Shane Meadows and Lynne Ramsey. Amongst its numerous awards Company Pictures won Best Independent Production Company at the 2005 and 2008 Broadcast Awards and the European Producers of the Year Award at the 2004 Monte Carlo Awards.</p>
+
+    <p class="tmColor1">Since October 2004 Company Pictures has been a part of the All3 Media group.</p>
+
+    <h1 class="tmColor1">About Two Brothers Pictures</h1>
+
+    <p class="tmColor1">A new independent company established in late 2012 by Harry and Jack Williams, joined by their Development Producer Sarah Hammond. They recently produced C4's animated sit-com six part series ‘Full English', animated by Rough Draft Studios (Futurama, The Simpsons Movie). Last year they made ‘The Guardians' as a pilot for C4 and are currently shooting ‘Fried', a comedy pilot for the BBC. They are increasingly moving into drama as well as comedy, with a number of original drama commissions already on the slate. They currently have a first look deal with 4DVD.</p>
+
+</div>
+
+<!-- BG and Fixed Elements -->
+
+<div id="keyBG">
+    <div id="ta"><img src="img/ta.png" alt="The Missing" class="img"></div>
+    <div id="footer"><p class="offWhite fineprint centerText">The Missing &copy; New Pictures Limited/Company Television Limited 2014. All rights reserved.</p></div>
+</div>
+<div id="ta2"><img src="img/ta.png" alt="The Missing" class="img"></div>
+</div>
+<div id="menu">
+    <div class="menuOption" data-nav="about"><p>About The Missing</p></div>
+    <div class="menuOption" data-nav="gallery"><p>Gallery</p></div>
+    <div class="menuOption" data-nav="cast"><p>Cast</p></div>
+    <div class="menuOption" data-nav="episode"><p>Episode Synopsis</p></div>
+    <div class="menuOption" data-nav="production"><p>Production</p></div>
+    <div class="menuOption" data-nav="video"><p>Video</p></div>
+    <div class="menuOption" data-nav="starz"><p>About STARZ</p></div>
+</div>
+<div id="menuButton">
+    <div id="menuToggleOn"><img src="img/iconMenu.svg"></div>
+    <div id="menuToggleOff"><img src="img/iconClose.png"></div>
+</div>
+<div id="bonus" class="scrollY"><p class="center">
+    <img src="img/iconClose.svg" class="close hotspot closeIconR contentCloseIcon">
+
+    <p class="quote tan center" id="bonusText"></p>
+
+    <p class="center"><img src="" id="bonusImage" class="img"></p>
+</div>
+<div id="bigEars" class="hotspot"></div>
+<div id="overlay"></div>
+<div id="rotatePrompt"><p class="tmColor1 centerText">Please rotate your device or enlarge your screen.</p></div>
+<script src="script/TMS1_Presskit.min.js"></script>
+</body>
+</html>
